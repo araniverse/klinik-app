@@ -15,7 +15,8 @@ class TransaksiPasienController extends Controller
 {
     public function index()
     {
-        $transaksiPasien = TransaksiPasien::with(['pasien', 'pelayanan', 'obat'])->get();
+        // Mengambil semua data transaksi dengan relasi
+        $transaksiPasien = TransaksiPasien::with(['wilayah', 'data_tindakan', 'data_obat'])->get();
         return view('pages.transaksipasien.index', compact('transaksiPasien'));
     }
 

@@ -11,6 +11,8 @@ class TransaksiPasien extends Model
 
     protected $table = 'transaksi_pasien';
 
+    protected $dates = ['tanggal'];
+
     protected $fillable = [
         'pasien_id',
         'pelayanan_id',
@@ -19,17 +21,17 @@ class TransaksiPasien extends Model
         'total_biaya',
     ];
 
-    public function pasien()
+    public function wilayah()
     {
         return $this->belongsTo(Wilayah::class, 'pasien_id');
     }
 
-    public function pelayanan()
+    public function data_tindakan()
     {
         return $this->belongsTo(DataTindakan::class, 'pelayanan_id');
     }
 
-    public function obat()
+    public function data_obat()
     {
         return $this->belongsTo(DataObat::class, 'obat_id');
     }
