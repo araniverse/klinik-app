@@ -17,7 +17,7 @@
 
         <!-- Card Jumlah Pasien -->
         <div class="col-md-3">
-            <a href="{{ route('suratmasuk.index') }}" class="text-decoration-none">
+            <a href="{{ route('wilayah.index') }}" class="text-decoration-none">
                 <div class="card text-white bg-success mb-3">
                     <div class="card-header">Jumlah Pasien</div>
                     <div class="card-body">
@@ -29,7 +29,7 @@
 
         <!-- Card Jumlah Obat -->
         <div class="col-md-3">
-            <a href="{{ route('suratkeluar.index') }}" class="text-decoration-none">
+            <a href="{{ route('dataobat.index') }}" class="text-decoration-none">
                 <div class="card text-white bg-warning mb-3">
                     <div class="card-header">Jumlah Obat</div>
                     <div class="card-body">
